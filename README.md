@@ -8,10 +8,25 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+To get started with the app clone the Repo and install the required gems
 
 ```
-Give examples
+bundle install --without production
+```
+Next, migrate the data base
+
+```
+rails db:migrate
+```
+
+Finally, run the test suite to verify everything is working correctly:
+```
+rails test
+```
+
+If the test suite passes, you will be ready to run the app in a local server:
+```
+bin/rails server
 ```
 
 ### Installing
